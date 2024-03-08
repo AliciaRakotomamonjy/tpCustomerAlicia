@@ -18,7 +18,7 @@ import mg.itu.tpcustomeralicia.entity.Discount;
  */
 @RequestScoped
 public class DiscountManager {
-    @PersistenceContext(unitName = "discountPU")
+    @PersistenceContext(unitName = "customerPU")
     private EntityManager em;
 
     /**

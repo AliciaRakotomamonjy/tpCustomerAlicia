@@ -18,7 +18,7 @@ import mg.itu.tpcustomeralicia.entity.MicroMarket;
  */
 @RequestScoped
 public class MicroMarketManager {
-    @PersistenceContext(unitName = "microMarketPU")
+    @PersistenceContext(unitName = "customerPU")
     private EntityManager em;
 
     /**
