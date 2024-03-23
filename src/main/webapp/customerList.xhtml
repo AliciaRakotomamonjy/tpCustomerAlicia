@@ -14,7 +14,7 @@
             value="#{customerBean.customers}"
              
             paginator="true" rows="10"
-            allowUnsorting="true" sortMode="single">
+            allowUnsorting="true" sortMode="multiple">
                 <p:column>
                     <f:facet name="header">
                         <h:outputText value="Id"/>
@@ -28,7 +28,7 @@
                     </f:facet>
                     <h:outputText value="#{item.name}"/>
                 </p:column>
-                <p:column>
+                <p:column  sortBy="#{item.city}">
                     <f:facet name="header">
                         <h:outputText value="Ville"/>
                     </f:facet>
@@ -40,7 +40,7 @@
                     </f:facet>
                     <h:outputText value="#{item.discount.code} : #{item.discount.rate} %"/>
                 </p:column>
-                <p:column>
+                <p:column  sortBy="#{item.state}">
                     <f:facet name="header">
                         <h:outputText value="État"/>
                     </f:facet>
